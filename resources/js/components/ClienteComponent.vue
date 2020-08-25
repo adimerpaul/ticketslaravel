@@ -17,11 +17,11 @@
         </div>
         <div style="height: 30vh;border: 1px solid #c68400;background: #ffe54c">
             <div class="grid" id="fichas" >
-<!--                <div  class="col" style="display: flex;align-items: center;text-align: center">-->
-<!--                    <p style="  font-size:1.8em;font-weight:bold;text-align: center;width: 100%" >-->
-
-<!--                    </p>-->
-<!--                </div>-->
+<div  class="col" style="display: flex;align-items: center;text-align: center">
+                                        <p style="  font-size:3em;font-weight:bold;text-align: center;width: 100%" >
+                    TC-8->10
+                                        </p>
+                                    </div>
             </div>
         </div>
     </div>
@@ -40,6 +40,7 @@
 // Similarly, you can also introduce the plugin resource pack you want to use within the component
 // import 'some-videojs-plugin'
 const $ = require('jquery');
+
 export default {
     data() {
         return {
@@ -57,8 +58,7 @@ export default {
             // },
             video:1,
             array: ['','','','','','','',''],
-            socket : io('http://localhost:3000'),
-
+            socket : io('http://192.168.154.130:3000'),
         }
     },
     mounted() {
@@ -90,7 +90,7 @@ export default {
             $('#fichas').html('');
             for (let i=0;i<8;i++){
                 $('#fichas').append('<div  class="col" style="display: flex;align-items: center;text-align: center">' +
-                    '                    <p style="  font-size:1.8em;font-weight:bold;text-align: center;width: 100%" >' +
+                    '                    <p style="  font-size:3em;font-weight:bold;text-align: center;width: 100%" >' +
                     array[i] +
                     '                    </p>' +
                     '                </div>');

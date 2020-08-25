@@ -139,7 +139,7 @@ export default {
         user:{},
         nombrecaja:"",
         tickets:[],
-        socket : io('http://localhost:3000'),
+        socket : io('http://192.168.154.130:3000'),
     }),
 }
 </script>

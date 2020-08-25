@@ -18,5 +18,7 @@ class UnitSeeder extends Seeder
         DB::table('units')->insert(['nombre'=>'INDUSTRI COMERCIO','abreviatura'=>'IC','color'=>'#952175']);
         DB::table('units')->insert(['nombre'=>'ESPEC. PUBLICOS','abreviatura'=>'EP','color'=>'#1F7087']);
         DB::table('units')->insert(['nombre'=>'MERCADOS','abreviatura'=>'ME','color'=>'#952175']);
+        DB::table('units')->insert(['nombre'=>'VALORES','abreviatura'=>'VA','color'=>'#1F7087']);
+        DB::table('units')->insert(['nombre'=>'BANCO','abreviatura'=>'BA','color'=>'#952175']);
     }
 }
