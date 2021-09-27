@@ -135,7 +135,7 @@ export default {
                 src: "video/spot"+this.video+".mp4"
             }];
             this.onPlayerPlay(player);
-            if (this.video==7) this.video=0;
+            if (this.video==9) this.video=0;
         }
     }
 }
