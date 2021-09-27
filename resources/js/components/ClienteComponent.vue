@@ -69,7 +69,7 @@ export default {
             cont++;
             // console.log(newVideo);
             newVideo.src = "video/spot"+cont+".mp4";
-            if (cont==7)cont=0;
+            if (cont==9)cont=0;
             newVideo.load();
         }, false);
         newVideo.play();
