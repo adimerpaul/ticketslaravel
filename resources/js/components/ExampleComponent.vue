@@ -50,12 +50,14 @@ import moment from 'moment';
                 axios.post('/ticket',{unit_id:item.id}).then(async res=>{
                     console.log(res.data);
                     let myWindow = await window.open("", "myWindow", "width=200,height=100");
-                    myWindow.document.write('<div style="border: 1px solid black">' +
-                        '<img width="120" src="img/gamo.png" alt="">' +
-                        '<p>'+item.nombre+'</p>' +
-                        '<h4>'+res.data.numero+'</h4>' +
-                        '<p>Tome asiento y espere su turno</p>' +
-                        '<p>'+moment().format('MMMM Do YYYY, h:mm:ss a')+'</p>' +
+                    myWindow.document.write('<style>*{padding:0px;border:0px;margin:0px;}</style><div style="text-align:center;padding-left: 25px;padding-right: 25px;">' +
+                        '<div style="border: 1px solid black">' +
+                            '<img width="120" src="img/gamo.png" alt="">' +
+                            '<p>'+item.nombre+'</p>' +
+                            '<h4>'+res.data.numero+'</h4>' +
+                            '<p>Tome asiento y espere su turno</p>' +
+                            '<p>'+moment().format('MMMM Do YYYY, h:mm:ss a')+'</p>' +
+                            '</div>' +
                         '</div>');
                     myWindow.focus();
                     setTimeout(function(){
