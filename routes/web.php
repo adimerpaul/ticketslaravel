@@ -28,7 +28,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::apiResource('/unit','UnitController');
-Route::apiResource('/ticket','ticketController');
+Route::apiResource('/ticket','TicketController');
 Route::post('/login','EmpleadoController@login');
 Route::post('/atender','EmpleadoController@atender');
 Route::post('/ultificha','EmpleadoController@ultificha');
